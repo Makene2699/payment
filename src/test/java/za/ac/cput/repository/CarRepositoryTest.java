@@ -13,10 +13,9 @@ public class CarRepositoryTest {
             CarRepository repo = new ICarRepository();
 
             Car car = CarFactory.createCar(
-                    "C001", "Toyota", "Corolla",
-                    2022, 500.0, "Available", 10000
+                    "C001", "Hyndai", "Accent",
+                    2021, 700.0, "Available", 10000
             );
-
             repo.create(car);
             Car found = repo.read("C001");
 

@@ -10,10 +10,10 @@ public class CarRepositoryTest {
 
         @Test
         void testCreateAndRead() {
-            CarRepository repo = new ICarRepository();
+            ICarRepository repo = new ICarRepository();
 
             Car car = CarFactory.createCar(
-                    "C001", "Hyndai", "Accent",
+                    "C001", "Toyota", "Corolla",
                     2021, 700.0, "Available", 10000
             );
             repo.create(car);
